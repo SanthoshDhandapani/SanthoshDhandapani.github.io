@@ -2614,9 +2614,7 @@ body {
 }
 
 .head-nav .nav>ul>li li.menu-item-has-children:after {
-	content: "\e900";
 	font-size: 20px;
-	font-family: "icomoon";
 	top: 2px;
 	left: 6px;
 	color: inherit;
@@ -3702,6 +3700,15 @@ body {
 	line-height: 1.5;
 	margin-bottom: 25px;
 	position: relative;
+}
+
+.timeline-box .skills {
+  color: #333333;
+}
+
+.timeline-box .skills span {
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
 }
 
 .timeline-box:last-child {
