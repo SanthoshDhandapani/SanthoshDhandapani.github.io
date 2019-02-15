@@ -1,52 +1,52 @@
 /***/
-.theme-color-07aaf5 a,
-.theme-color-07aaf5 .interests-list i,
-.theme-color-07aaf5 .logo span,
-.theme-color-07aaf5 .page-404 h2 span,	
-.theme-color-07aaf5 .service-icon,
-.theme-color-07aaf5 .service-sub-title,			
-.theme-color-07aaf5 .styled-list li:before,			
-.theme-color-07aaf5 .timeline-box .date,			
-.theme-color-07aaf5 .head-nav .sub-menu li:hover>a,
-.theme-color-07aaf5 .head-nav .sub-menu li.active,
-.theme-color-07aaf5 .head-lang .lang-list a:hover{
+.theme-color-base a,
+.theme-color-base .interests-list i,
+.theme-color-base .logo span,
+.theme-color-base .page-404 h2 span,	
+.theme-color-base .service-icon,
+.theme-color-base .service-sub-title,			
+.theme-color-base .styled-list li:before,			
+.theme-color-base .timeline-box .date,			
+.theme-color-base .head-nav .sub-menu li:hover>a,
+.theme-color-base .head-nav .sub-menu li.active,
+.theme-color-base .head-lang .lang-list a:hover{
   color: #07aaf5 !important;
 }
 
-.theme-color-07aaf5 mark,
-.theme-color-07aaf5 .btn-primary,
-.theme-color-07aaf5 .btn-primary-outer,
-.theme-color-07aaf5 .btn-sidebar-close,
-.theme-color-07aaf5 .filter .active:after,
-.theme-color-07aaf5 .filter-bar .filter-bar-line,
-.theme-color-07aaf5 .input-field .line:before,
-.theme-color-07aaf5 .input-field .line:after,
-.theme-color-07aaf5 .mobile-nav,
-.theme-color-07aaf5 .head-nav .nav>ul>li>a:after,
-.theme-color-07aaf5 .post-datetime,
-.theme-color-07aaf5 .profile-social,
-.theme-color-07aaf5 .profile-preword span,
-.theme-color-07aaf5 .progress-bar .bar-fill,
-.theme-color-07aaf5 .progress-bar .bar-line:after,
-.theme-color-07aaf5 .price-box.box-primary .btn,
-.theme-color-07aaf5 .price-box.box-primary .price-box-top,
-.theme-color-07aaf5 .profile-list .button,
-.theme-color-07aaf5 .togglebox-header,
-.theme-color-07aaf5 .accordion-header,
-.theme-color-07aaf5 .timeline-bar,
-.theme-color-07aaf5 .timeline-box .dot,
-.theme-color-07aaf5 .timeline-box-compact .date span,
-.theme-color-07aaf5 .mejs-container .mejs-controls .mejs-time-rail .mejs-time-current {
+.theme-color-base mark,
+.theme-color-base .btn-primary,
+.theme-color-base .btn-primary-outer,
+.theme-color-base .btn-sidebar-close,
+.theme-color-base .filter .active:after,
+.theme-color-base .filter-bar .filter-bar-line,
+.theme-color-base .input-field .line:before,
+.theme-color-base .input-field .line:after,
+.theme-color-base .mobile-nav,
+.theme-color-base .head-nav .nav>ul>li>a:after,
+.theme-color-base .post-datetime,
+.theme-color-base .profile-social,
+.theme-color-base .profile-preword span,
+.theme-color-base .progress-bar .bar-fill,
+.theme-color-base .progress-bar .bar-line:after,
+.theme-color-base .price-box.box-primary .btn,
+.theme-color-base .price-box.box-primary .price-box-top,
+.theme-color-base .profile-list .button,
+.theme-color-base .togglebox-header,
+.theme-color-base .accordion-header,
+.theme-color-base .timeline-bar,
+.theme-color-base .timeline-box .dot,
+.theme-color-base .timeline-box-compact .date span,
+.theme-color-base .mejs-container .mejs-controls .mejs-time-rail .mejs-time-current {
   background: #07aaf5; 
 }
   
-.theme-color-07aaf5 .timeline-box-inner,
-.theme-color-07aaf5 .wpcf7-form .wpcf7-form-control:focus {
+.theme-color-base .timeline-box-inner,
+.theme-color-base .wpcf7-form .wpcf7-form-control:focus {
   border-color: #07aaf5; 
 }
   
-.theme-color-07aaf5 .page-404 h2 span:before,
-.theme-color-07aaf5 .profile-preword span:before,
-.theme-color-07aaf5 .timeline-box-compact .date span:before {
+.theme-color-base .page-404 h2 span:before,
+.theme-color-base .profile-preword span:before,
+.theme-color-base .timeline-box-compact .date span:before {
   border-left-color: #07aaf5; 
  }
