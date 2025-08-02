@@ -18,12 +18,11 @@ const ProfileHeader = () => {
           transition={{ duration: 0.5 }}
           className="mt-8 mb-8"
         >
-          <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-500 mb-4">
+          <div className="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-blue-500 mb-4">
             <img 
               src={portfolioConfig.personal.profileImage} 
               alt={`${portfolioConfig.personal.name} Profile`} 
               className="w-full h-full object-cover"
-
             />
           </div>
         </motion.div>

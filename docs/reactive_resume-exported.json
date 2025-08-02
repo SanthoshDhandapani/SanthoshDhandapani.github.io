@@ -11,7 +11,7 @@
     },
     "customFields": [],
     "picture": {
-      "url": "https://raw.githubusercontent.com/SanthoshDhandapani/SanthoshDhandapani.github.io/refs/heads/master/images/profile_pic.png",
+      "url": "https://raw.githubusercontent.com/SanthoshDhandapani/SanthoshDhandapani.github.io/refs/heads/master/images/profile_pic_optimized.png",
       "size": 120,
       "aspectRatio": 1,
       "borderRadius": 0,
@@ -429,11 +429,13 @@
             "React Native",
             "JavaScript (ESNext)",
             "TypeScript",
-            "HTML5",
-            "CSS3",
             "Redux",
+            "Zustand",
             "RTK Query",
-            "MobX"
+            "MobX",
+            "Leaflet.js",
+            "D3",
+            "Android"
           ]
         },
         {
@@ -461,11 +463,11 @@
           "level": 0,
           "keywords": [
             "Jest",
-            "Testing Library",
             "Playwright",
             "Test Café",
             "Cucumber (BDD)",
-            "Enzyme"
+            "Enzyme",
+            "Appium"
           ]
         },
         {
@@ -480,9 +482,20 @@
             "Nest.js",
             "MongoDB",
             "MySQL",
-            "DynamoDB",
+            "DynamoDB"
+          ]
+        },
+        {
+          "id": "e1thg1abh57wqns0k2808xoh",
+          "visible": true,
+          "name": " API & Integration",
+          "description": "",
+          "level": 0,
+          "keywords": [
             "REST APIs",
-            "GraphQL"
+            "GraphQL",
+            "WebSockets",
+            "MQTT"
           ]
         },
         {
@@ -499,22 +512,6 @@
             "Jenkins",
             "CI/CD",
             "Elasticsearch"
-          ]
-        },
-        {
-          "id": "skill6",
-          "visible": true,
-          "name": "Specialized Technologies",
-          "description": "",
-          "level": 0,
-          "keywords": [
-            "Leaflet.js",
-            "React-Leaflet",
-            "Chart.js",
-            "GIS",
-            "Flutter",
-            "Android",
-            "Java"
           ]
         }
       ]
