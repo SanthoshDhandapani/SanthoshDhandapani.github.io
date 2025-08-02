@@ -3,6 +3,7 @@ import portfolioConfig from "../config/portfolioConfig";
 import SectionContainer from "./ui/SectionContainer";
 import Card from "./ui/Card";
 import Grid from "./ui/Grid";
+import Icon from "./ui/Icon";
 
 const Awards = () => {
   const { awards } = portfolioConfig;
@@ -13,7 +14,7 @@ const Awards = () => {
         {awards.map((award, index) => (
           <Card key={award.id} hoverColor="yellow-500" delay={index * 0.1}>
             <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3 cursor-auto select-none">{award.icon}</span>
+              <Icon size="lg" className="mr-3">{award.icon}</Icon>
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-white group-hover:text-yellow-400 transition-colors">
                   {award.title}

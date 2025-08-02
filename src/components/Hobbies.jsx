@@ -3,6 +3,7 @@ import portfolioConfig from "../config/portfolioConfig";
 import SectionContainer from "./ui/SectionContainer";
 import Card from "./ui/Card";
 import Grid from "./ui/Grid";
+import Icon from "./ui/Icon";
 
 const Hobbies = () => {
   const { interests } = portfolioConfig;
@@ -13,7 +14,7 @@ const Hobbies = () => {
         {interests.map((interest, index) => (
           <Card key={interest.name} hoverColor="blue-500" delay={index * 0.1}>
             <div className="text-center">
-              <div className="text-4xl mb-4 cursor-auto select-none">{interest.icon}</div>
+              <Icon size="xl" className="mb-4">{interest.icon}</Icon>
               <h3 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors mb-2">
                 {interest.name}
               </h3>

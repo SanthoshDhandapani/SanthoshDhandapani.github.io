@@ -61,6 +61,9 @@ const ProfileHeader = () => {
             <span className="text-blue-400">Experience:</span> Since Aug 2012
           </div>
           <div className="text-gray-400 text-center">
+            <span className="text-blue-400">Location:</span> {portfolioConfig.personal.location}
+          </div>
+          <div className="text-gray-400 text-center">
             <span className="text-blue-400">Age:</span> {age} years
           </div>
         </motion.div>

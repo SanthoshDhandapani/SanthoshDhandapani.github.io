@@ -58,7 +58,7 @@ const portfolioConfig = {
       date: "2018 - 2019",
       description: "Led the development of the WIO platform, a key product for the company. Managed cross-functional teams and delivered scalable solutions.",
       logo: "/images/companies/infinite.png",
-      technologies: ["React.js", "JavaScript", "TypeScript", "NodeJs"]
+      technologies: ["React.js", "React Native", "JavaScript", "TypeScript", "NodeJs"]
     },
     {
       id: "exp5",
@@ -76,7 +76,7 @@ const portfolioConfig = {
       date: "2014 - 2017",
       description: "Developed web applications and e-commerce solutions. Worked on full-stack development projects.",
       logo: "/images/companies/msf.png",
-      technologies: ["Android", "Java", "React.js", "PHP", "JavaScript", "MySQL"]
+      technologies: ["Android", "Java", "JavaScript", "React.js", "PHP"]
     },
     {
       id: "exp7",

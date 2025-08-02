@@ -2,6 +2,7 @@ import React from "react";
 import { TracingBeam } from "./ui/TracingBeam";
 import portfolioConfig from "../config/portfolioConfig";
 import SectionContainer from "./ui/SectionContainer";
+import ExternalLink from "./ui/ExternalLink";
 
 const EducationCard = ({ edu }) => (
   <div className="mb-10">
@@ -14,14 +15,9 @@ const EducationCard = ({ edu }) => (
           <p className="text-gray-400 text-sm mb-3">{edu.location}</p>
           <p className="text-gray-300 leading-relaxed mb-4">{edu.description}</p>
           {edu.website && (
-            <a 
-              href={edu.website} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 text-sm inline-block"
-            >
+            <ExternalLink href={edu.website} color="blue" showIcon={false}>
               Visit Institution →
-            </a>
+            </ExternalLink>
           )}
         </div>
       </div>
