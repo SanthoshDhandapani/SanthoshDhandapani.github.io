@@ -11,7 +11,7 @@
     },
     "customFields": [],
     "picture": {
-      "url": "https://raw.githubusercontent.com/SanthoshDhandapani/SanthoshDhandapani.github.io/refs/heads/master/images/profile_pic_optimized.png",
+      "url": "https://raw.githubusercontent.com/SanthoshDhandapani/SanthoshDhandapani.github.io/refs/heads/master/public/images/profile_pic_optimized.png",
       "size": 120,
       "aspectRatio": 1,
       "borderRadius": 0,
@@ -29,7 +29,7 @@
       "separateLinks": true,
       "visible": true,
       "id": "summary",
-      "content": "<p>Staff Software Engineer with 13+ years specializing in <strong>frontend development</strong> across dynamic web, desktop, and mobile applications. Proven expertise in all stages of the development lifecycle with strong background in architecture, implementation, team leadership, and project management.</p><p>Committed to quality-driven development through methodical planning, algorithmic design, comprehensive testing, continuous code reviews, and collaborative peer discussions. Strong advocate of crafting robust solutions rather than rushing to implementation, ensuring scalable and maintainable codebases that deliver measurable business impact across enterprise-scale applications.</p>"
+      "content": "<p>A Lead Software Engineer with 13+ years specializing in <strong>Frontend Development</strong> across dynamic web, desktop, and mobile applications. Proven expertise in all stages of the development lifecycle with strong background in architecture, implementation, team leadership, and project management.</p><p>Committed to quality-driven development through methodical planning, algorithmic design, comprehensive testing, continuous code reviews, and collaborative peer discussions. Strong advocate of crafting robust solutions rather than rushing to implementation, ensuring scalable and maintainable codebases that deliver measurable business impact across enterprise-scale applications.</p>"
     },
     "awards": {
       "name": "Awards",
