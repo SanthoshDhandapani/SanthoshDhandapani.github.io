@@ -1,12 +1,23 @@
 // Portfolio Configuration - Single source of truth for all portfolio data
 // This file extracts and structures data from the resume JSON for easy consumption by components
 
+// Calculate years of experience dynamically from given year and month
+const calculateExperience = (year, month) => {
+  const startDate = new Date(year, month); // Given Year (month is 0-indexed)
+  const currentDate = new Date();
+  const diffTime = Math.abs(currentDate - startDate);
+  const diffYears = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 365.25));
+  return `${diffYears}+`;
+};
+
+const yearsOfExperience = calculateExperience(2012, 7);
+
 const portfolioConfig = {
   // Basic Information
   personal: {
     name: "Santhosh Dhandapani",
     title: "Staff Software Engineer",
-    subtitle: "13+ years specializing in frontend development",
+    subtitle: `${yearsOfExperience} years specializing in frontend development`,
     email: "san.itsnew@gmail.com",
     phone: "+91 9962242274",
     dateOfBirth: "1990-05-10",
@@ -19,7 +30,7 @@ const portfolioConfig = {
 
   // Professional Summary
   summary: {
-    content: "Staff Software Engineer with 13+ years specializing in frontend development across dynamic web, desktop, and mobile applications. Proven expertise in all stages of the development lifecycle with strong background in architecture, implementation, team leadership, and project management. Committed to quality-driven development through methodical planning, algorithmic design, comprehensive testing, continuous code reviews, and collaborative peer discussions."
+    content: `With ${yearsOfExperience} years specializing in frontend development across dynamic web, desktop, and mobile applications. Proven expertise in all stages of the development lifecycle with strong background in architecture, implementation, team leadership, and project management. Committed to quality-driven development through methodical planning, algorithmic design, comprehensive testing, continuous code reviews, and collaborative peer discussions.`
   },
 
   // Work Experience Timeline
@@ -470,7 +481,7 @@ technologies: [
     {
       title: "Smart Design",
       subtitle: "AI-Assisted UI/UX Design",
-      description: "Using AI-powered design toolsn MCP's and prompts to create user-centric interfaces, generate design variations, and optimize user experience through data-driven insights.",
+      description: "Using AI-powered design tools, MCPs, and prompts to create user-centric interfaces, generate design variations, and optimize user experience through data-driven insights.",
       icon: "🎨"
     },
     {

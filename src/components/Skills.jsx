@@ -24,7 +24,7 @@ const Skills = () => {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-3xl md:text-4xl font-bold text-white text-center mb-12"
+          className="text-3xl md:text-4xl font-bold text-white text-center mb-16"
         >
           How I Work
         </motion.h2>
@@ -52,12 +52,12 @@ const Skills = () => {
           className="text-center"
         >
           <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Technologies & Skills</h3>
-          <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
             Expertise across the full technology stack with focus on modern development practices
           </p>
           
           {/* Skills organized by categories */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {Object.entries(portfolioConfig.skills).map(([categoryKey, category], categoryIndex) => {
               // Define category-specific styling
               const categoryStyles = {
@@ -109,7 +109,7 @@ const Skills = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ delay: (categoryIndex * 0.15) + (techIndex * 0.05), duration: 0.4 }}
-                        className="px-3 py-1 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white text-sm rounded-full transition-all duration-300 cursor-default border border-gray-600 hover:border-gray-500 transform hover:scale-105"
+                        className="px-3 py-1 bg-blue-900 bg-opacity-30 hover:bg-blue-800 hover:bg-opacity-50 text-blue-300 hover:text-blue-100 text-sm rounded-full transition-all duration-300 cursor-default border border-blue-500 hover:border-blue-400 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30"
                         title={`${tech.description} (${tech.level})`}
                       >
                         {tech.name}
