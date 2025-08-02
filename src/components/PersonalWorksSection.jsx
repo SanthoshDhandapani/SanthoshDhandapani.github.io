@@ -6,8 +6,8 @@ const PersonalWorksSection = () => {
   const works = portfolioConfig.personalWorks;
 
   return (
-    <section id="personal-works" className="py-20 bg-black">
-      <h2 className="text-4xl md:text-6xl font-bold text-center text-white mb-16">Personal Projects</h2>
+    <section id="personal-works" className="pt-20 bg-black">
+      <h2 className="text-4xl md:text-6xl font-bold text-center text-white mb-8">Personal Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
         {works.map((work, index) => (
           <CardContainer key={work.id}>

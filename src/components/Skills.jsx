@@ -19,7 +19,7 @@ const Skills = () => {
   const technologies = getAllTechnologies();
 
   return (
-    <section className="bg-black">
+    <section className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

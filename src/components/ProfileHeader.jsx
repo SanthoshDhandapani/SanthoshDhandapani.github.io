@@ -8,7 +8,7 @@ import portfolioConfig from "../config/portfolioConfig";
 const ProfileHeader = () => {
   const age = useAge(portfolioConfig.personal.dateOfBirth);
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center py-20 bg-black overflow-hidden">
       <BackgroundBeams />
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">

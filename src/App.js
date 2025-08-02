@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ProfileHeader from './components/ProfileHeader';
 import Skills from './components/Skills';
-import ExperienceTimeline from './components/ExperienceTimeline';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Awards from './components/Awards';
+import Certifications from './components/Certifications';
 import DesignWorksSection from './components/DesignWorksSection';
 import PersonalWorksSection from './components/PersonalWorksSection';
 import portfolioConfig from './config/portfolioConfig';
@@ -47,12 +50,15 @@ function App() {
             <Skills />
           </section>
           
-          <ExperienceTimeline />
+          <Experience />
+          <Education />
+          <Awards />
+          <Certifications />
           <DesignWorksSection />
           <PersonalWorksSection />
 
           {/* Interests & Hobbies Section */}
-          <section id="contact" className="py-20 bg-gray-900">
+          <section id="hobbies" className="py-20 bg-black">
             <div className="max-w-6xl mx-auto px-4">
               <h2 className="text-3xl font-bold text-white text-center mb-12">Interests & Hobbies</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -57,7 +57,7 @@ const portfolioConfig = {
       company: "Infinite Computer Solutions",
       date: "2018 - 2019",
       description: "Led the development of the WIO platform, a key product for the company. Managed cross-functional teams and delivered scalable solutions.",
-      logo: "/images/companies/wio.png",
+      logo: "/images/companies/infinite.png",
       technologies: ["React.js", "JavaScript", "TypeScript", "NodeJs"]
     },
     {
@@ -75,7 +75,7 @@ const portfolioConfig = {
       company: "Market Simplified",
       date: "2014 - 2017",
       description: "Developed web applications and e-commerce solutions. Worked on full-stack development projects.",
-      logo: "/images/companies/smartD.png",
+      logo: "/images/companies/msf.png",
       technologies: ["Android", "Java", "React.js", "PHP", "JavaScript", "MySQL"]
     },
     {
@@ -416,9 +416,12 @@ const portfolioConfig = {
     { name: "Home", href: "#home" },
     { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
+    { name: "Education", href: "#education" },
+    { name: "Awards", href: "#awards" },
+    { name: "Certifications", href: "#certifications" },
     { name: "Designs", href: "#design-works" },
     { name: "Projects", href: "#personal-works" },
-    { name: "Contact", href: "#contact" }
+    { name: "Hobbies", href: "#hobbies" }
   ],
 
   // Social Links
