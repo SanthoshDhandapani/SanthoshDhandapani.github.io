@@ -1,0 +1,579 @@
+{
+  "basics": {
+    "name": "Santhosh Dhandapani",
+    "headline": "Staff Software Engineer",
+    "email": "san.itsnew@gmail.com",
+    "phone": "+91 9962242274",
+    "location": "Chennai, India",
+    "url": {
+      "label": "Portfolio",
+      "href": "https://santhoshdhandapani.github.io"
+    },
+    "customFields": [],
+    "picture": {
+      "url": "https://raw.githubusercontent.com/SanthoshDhandapani/SanthoshDhandapani.github.io/refs/heads/master/images/profile_pic.png",
+      "size": 120,
+      "aspectRatio": 1,
+      "borderRadius": 0,
+      "effects": {
+        "hidden": false,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "Summary",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "summary",
+      "content": "<p>Staff Software Engineer with 13+ years specializing in <strong>frontend development</strong> across dynamic web, desktop, and mobile applications. Proven expertise in all stages of the development lifecycle with strong background in architecture, implementation, team leadership, and project management.</p><p>Committed to quality-driven development through methodical planning, algorithmic design, comprehensive testing, continuous code reviews, and collaborative peer discussions. Strong advocate of crafting robust solutions rather than rushing to implementation, ensuring scalable and maintainable codebases that deliver measurable business impact across enterprise-scale applications.</p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "awards",
+      "items": [
+        {
+          "id": "award1",
+          "visible": true,
+          "title": "Engineering Excellence",
+          "awarder": "Walmart Global Tech India",
+          "date": "2023-2024",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "lwyq1kk5s4slj7vxav9tmpzy",
+          "visible": true,
+          "title": "Global Techathon - Finalist",
+          "awarder": "Walmart Global Tech India",
+          "date": "2023-2024",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "award2",
+          "visible": true,
+          "title": "Operational Excellence Award",
+          "awarder": "Walmart Global Tech India",
+          "date": "2022-2023",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "award3",
+          "visible": true,
+          "title": "Best Team Performance",
+          "awarder": "Walmart Global Tech India",
+          "date": "2022-2023",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "award4",
+          "visible": true,
+          "title": "Best Performer - Spark Award",
+          "awarder": "Infinite Computer Solutions",
+          "date": "2018-2019",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "certifications",
+      "items": [
+        {
+          "id": "cert1",
+          "visible": true,
+          "name": "Systems Design",
+          "issuer": "AlgoExpert",
+          "date": "October 2024",
+          "summary": "",
+          "url": {
+            "label": "Certification",
+            "href": "https://certificate.algoexpert.io/SystemsExpert%20Certificate%20SE-ce9b74d975"
+          }
+        },
+        {
+          "id": "cert2",
+          "visible": true,
+          "name": "Generative AI for Everyone",
+          "issuer": "Coursera (DeepLearning.AI)",
+          "date": "October 2024",
+          "summary": "",
+          "url": {
+            "label": "Certification",
+            "href": "https://coursera.org/share/2aceac13f7cb495e431c23d2649adb65"
+          }
+        },
+        {
+          "id": "cert3",
+          "visible": true,
+          "name": "Programming with JavaScript",
+          "issuer": "Coursera (Meta)",
+          "date": "January 2024",
+          "summary": "",
+          "url": {
+            "label": "Certification",
+            "href": "https://coursera.org/share/3263fb2d00599f01ccb4b13d4c0696ac"
+          }
+        },
+        {
+          "id": "ce4nwwllaxyk5wr3rsatmf39",
+          "visible": true,
+          "name": "AdobeXD - Design & Prototype",
+          "issuer": "Udemy",
+          "date": "January 2020",
+          "summary": "",
+          "url": {
+            "label": "Certification",
+            "href": "https://www.udemy.com/certificate/UC-T2OSNLMU/"
+          }
+        }
+      ]
+    },
+    "education": {
+      "name": "Education",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "edu1",
+          "visible": true,
+          "institution": "Prince Shri Venkateshwara Padmavathy Engineering College",
+          "studyType": "B.Tech",
+          "area": "Information Technology",
+          "score": "",
+          "date": "2012",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Experience",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "exp1",
+          "visible": true,
+          "company": "FourKites",
+          "position": "Staff Software Engineer",
+          "location": "",
+          "date": "July 2024 to Present",
+          "summary": "<p><strong>Technologies:</strong> React.js, JavaScript (ESNext), Redux, RTK Query, Leaflet.js, Chart.js, Claude AI, GitHub MCP, Figma MCP</p><ul><li><p>Developed real-time data visualization dashboards with reusable chart utilities and drag-and-drop interfaces, leveraging Figma MCP for design-to-code workflows and Claude for widget generation.</p></li><li><p>Built advanced GIS interactive Leaflet-based polygon editor with complex transformations (rotation, scaling, shear/tilt) using AI-assisted development workflows.</p></li><li><p>Architected dynamic product customization system with license-based feature management and role-based access control that dynamically renders lighter application versions based on license tiers and user permissions.</p></li></ul><p><strong>Key Achievements:</strong></p><ul><li><p>Reduced client implementation costs by 70% through GIS automation eliminating manual site surveying</p></li><li><p>Increased market penetration by 40% through tiered product offerings for mid-market customers</p></li><li><p>Accelerated sales cycle for prospects requiring real-time visualization capabilities</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "exp2",
+          "visible": true,
+          "company": "Walmart Global Tech India",
+          "position": "Senior Software Engineer (Technical Lead)",
+          "location": "",
+          "date": "October 2020 to July 2024",
+          "summary": "<p><strong>Technologies:</strong> React.js, React Native, Node.js, NestJS, AWS, MongoDB</p><p><strong>Campus Application (2021 – 2024)</strong></p><ul><li><p>Led development of employee engagement platform serving 50,000+ associates for career management, finances, learning, and team collaboration</p></li><li><p>Built cross-platform solution (mobile &amp; desktop) and collaborated with distributed US/India teams</p></li><li><p>Mentored team of 6 engineers, established coding standards and best practices</p></li></ul><p><strong>Sam's Club Applications (2020 – 2021)</strong></p><ul><li><p>Enhanced and maintained Membership Express &amp; Safety mobile applications serving 1M+ active users</p></li></ul><p><strong>Key Achievements:</strong></p><ul><li><p>Architected multi-regional content delivery system with frontend SDK and intelligent caching using Adobe AEM CRM</p></li><li><p>Enabled global scalability through multi-language support and region-specific optimizations across different image resolutions</p></li><li><p>Collaborated extensively with distributed US teams and cross-functional stakeholders to drive feature development and delivery</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "exp3",
+          "visible": true,
+          "company": "Publicis Sapient",
+          "position": "Senior Associate Experience Technology (Technical Lead)",
+          "location": "",
+          "date": "October 2019 to October 2020",
+          "summary": "<p><strong>Client:</strong> Lowe's Inc | <strong>Technologies:</strong> React.js, Node.js</p><ul><li><p>Developed enterprise-scale inbound supply chain management application hub</p></li><li><p>Collaborated with onsite teams and merchandising stakeholders to deliver critical business features</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "exp4",
+          "visible": true,
+          "company": "Infinite Computer Solutions",
+          "position": "Technical Lead",
+          "location": "",
+          "date": "2018 to September 2019",
+          "summary": "<p><strong>Product:</strong> WIO Cloud-based Premium Wi-Fi Platform | <strong>Technologies:</strong> React.js, React Native, Node.js</p><ul><li><p>Designed and implemented scalable SaaS platform for premium Wi-Fi providers, featuring cross-platform compatibility (mobile/desktop).</p></li><li><p>Implemented comprehensive testing strategy (BDD with Cucumber &amp; Test Café)</p></li><li><p>Developed automated deployment pipelines using Postman automation scripts</p></li><li><p>Implemented structured mentoring program featuring regular code reviews, technical presentations, and peer discussions, successfully advancing junior developers to mid-level engineering positions</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "exp5",
+          "visible": true,
+          "company": "Renault Nissan Technology and Business Centre India",
+          "position": "Assistant Manager",
+          "location": "",
+          "date": "2017 to 2018",
+          "summary": "<p><strong>Project:</strong> Connected Cars SDK Development | <strong>Technologies:</strong> Android, Java</p><ul><li><p>Core team member developing connected car solutions for Renault-Nissan-Mitsubishi alliance</p></li><li><p>Worked under leadership of Mathias Seguy (Android expert and DroidCon speaker)</p></li><li><p>Contributed to next-generation automotive connectivity features for global markets</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "exp6",
+          "visible": true,
+          "company": "Market Simplified India Pvt Ltd",
+          "position": "Senior Software Engineer",
+          "location": "",
+          "date": "2014 to 2017",
+          "summary": "<p><strong>Technologies:</strong> Java, Android, React.js, Electron, PHP</p><ul><li><p><strong>Smart D Business:</strong> Developed comprehensive restaurant management solution (mobile, tablet, desktop) with POS systems and analytics, helping 100+ restaurants increase revenue by 25%</p></li><li><p><strong>Smart D Foodie:</strong> Built real-time food ordering platform with dynamic menu management, optimized image caching, and integrated tracking systems for seamless application experience.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "exp7",
+          "visible": true,
+          "company": "Dunlysis Consultancy Services",
+          "position": "Project Lead",
+          "location": "",
+          "date": "August 2012 to July 2014",
+          "summary": "<p><strong>Technologies:</strong> PHP, HTML, CSS, JavaScript, CodeIgniter</p><ul><li><p>Led UK client projects including OakLeaf Partnership (HR platform), Five Guys UK (contact management), and restaurant booking systems</p></li><li><p>Managed Chennai-based development team ensuring 100% on-time project delivery</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteering",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "volunteer",
+      "items": []
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "interests",
+      "items": [
+        {
+          "id": "int1",
+          "visible": true,
+          "name": "Chess",
+          "keywords": []
+        },
+        {
+          "id": "int2",
+          "visible": true,
+          "name": "Badminton",
+          "keywords": []
+        },
+        {
+          "id": "int3",
+          "visible": true,
+          "name": "Swimming",
+          "keywords": []
+        },
+        {
+          "id": "int4",
+          "visible": true,
+          "name": "Gaming",
+          "keywords": []
+        }
+      ]
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": [
+        {
+          "id": "lang1",
+          "visible": true,
+          "name": "English",
+          "description": "Professional Working Proficiency",
+          "level": 4
+        },
+        {
+          "id": "lang2",
+          "visible": true,
+          "name": "Tamil",
+          "description": "Native Language",
+          "level": 5
+        }
+      ]
+    },
+    "profiles": {
+      "name": "Profiles",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "profiles",
+      "items": [
+        {
+          "id": "profile1",
+          "visible": true,
+          "network": "LinkedIn",
+          "username": "LinkedIn Profile",
+          "icon": "linkedin",
+          "url": {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/santhoshdhandapani/"
+          }
+        },
+        {
+          "id": "profile2",
+          "visible": true,
+          "network": "GitHub",
+          "username": "Github Profile",
+          "icon": "github",
+          "url": {
+            "label": "GitHub",
+            "href": "https://github.com/santhoshdhandapani"
+          }
+        }
+      ]
+    },
+    "projects": {
+      "name": "Projects",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "projects",
+      "items": []
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "references",
+      "items": [
+        {
+          "id": "ref1",
+          "visible": true,
+          "name": "Available upon request",
+          "description": "",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "skills": {
+      "name": "Skills",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "skill1",
+          "visible": true,
+          "name": "Frontend Development",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "React.js",
+            "React Native",
+            "JavaScript (ESNext)",
+            "TypeScript",
+            "HTML5",
+            "CSS3",
+            "Redux",
+            "RTK Query",
+            "MobX"
+          ]
+        },
+        {
+          "id": "skill2",
+          "visible": true,
+          "name": "UI Libraries & Build Tools",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Tailwind CSS",
+            "Material-UI",
+            "Bootstrap",
+            "Vite",
+            "Webpack",
+            "Babel",
+            "ESLint",
+            "Prettier"
+          ]
+        },
+        {
+          "id": "skill3",
+          "visible": true,
+          "name": "Testing & Quality",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Jest",
+            "Testing Library",
+            "Playwright",
+            "Test Café",
+            "Cucumber (BDD)",
+            "Enzyme"
+          ]
+        },
+        {
+          "id": "skill4",
+          "visible": true,
+          "name": "Backend & Database",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Node.js",
+            "Express.js",
+            "Nest.js",
+            "MongoDB",
+            "MySQL",
+            "DynamoDB",
+            "REST APIs",
+            "GraphQL"
+          ]
+        },
+        {
+          "id": "skill5",
+          "visible": true,
+          "name": "Cloud & DevOps",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "AWS Lambda",
+            "S3",
+            "CloudWatch",
+            "Docker",
+            "Jenkins",
+            "CI/CD",
+            "Elasticsearch"
+          ]
+        },
+        {
+          "id": "skill6",
+          "visible": true,
+          "name": "Specialized Technologies",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Leaflet.js",
+            "React-Leaflet",
+            "Chart.js",
+            "GIS",
+            "Flutter",
+            "Android",
+            "Java"
+          ]
+        }
+      ]
+    },
+    "custom": {}
+  },
+  "metadata": {
+    "template": "gengar",
+    "layout": [
+      [
+        [
+          "summary",
+          "experience",
+          "education",
+          "references"
+        ],
+        [
+          "profiles",
+          "skills",
+          "awards",
+          "certifications",
+          "interests",
+          "languages",
+          "volunteer",
+          "publications",
+          "projects"
+        ]
+      ]
+    ],
+    "css": {
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 14,
+      "format": "a4",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#0284c7"
+    },
+    "typography": {
+      "font": {
+        "family": "Open Sans",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 12
+      },
+      "lineHeight": 1.5,
+      "hideIcons": false,
+      "underlineLinks": true
+    },
+    "notes": ""
+  }
+}
