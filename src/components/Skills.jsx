@@ -3,21 +3,6 @@ import { motion } from "framer-motion";
 import portfolioConfig from "../config/portfolioConfig";
 
 const Skills = () => {
-  // Extract all technology names from portfolio config skills
-  const getAllTechnologies = () => {
-    const allTechs = [];
-    Object.values(portfolioConfig.skills).forEach(category => {
-      if (category.technologies) {
-        category.technologies.forEach(tech => {
-          allTechs.push(tech.name);
-        });
-      }
-    });
-    return allTechs;
-  };
-
-  const technologies = getAllTechnologies();
-
   return (
     <section className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4">
