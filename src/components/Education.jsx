@@ -1,49 +1,53 @@
 import React from "react";
 import { TracingBeam } from "./ui/TracingBeam";
 import portfolioConfig from "../config/portfolioConfig";
+import SectionContainer from "./ui/SectionContainer";
+
+const EducationCard = ({ edu }) => (
+  <div className="mb-10">
+    <div className="p-6 bg-gray-900 rounded-lg border border-gray-800 hover:border-blue-500 transition-colors">
+      <div className="flex items-start gap-4">
+        <div className="flex-1">
+          <h3 className="text-xl font-semibold text-white mb-1">{edu.degree}</h3>
+          <p className="text-blue-400 font-medium mb-2">{edu.institution}</p>
+          <p className="text-gray-400 text-sm mb-1">{edu.year}</p>
+          <p className="text-gray-400 text-sm mb-3">{edu.location}</p>
+          <p className="text-gray-300 leading-relaxed mb-4">{edu.description}</p>
+          {edu.website && (
+            <a 
+              href={edu.website} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 text-sm inline-block"
+            >
+              Visit Institution →
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+);
 
 const Education = () => {
   const { education } = portfolioConfig;
 
   return (
-    <section id="education" className="py-20 bg-black">
-      <div className="max-w-4xl mx-auto px-4">
-        <TracingBeam className="px-6">
-          <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-            <div className="mb-10">
-              <h2 className="text-4xl md:text-6xl font-bold text-center text-white mb-16">Education</h2>
-              
-              {/* Education */}
-              {education.map((edu) => (
-                <div key={edu.id} className="mb-10">
-                  <div className="p-6 bg-gray-900 rounded-lg border border-gray-800 hover:border-blue-500 transition-colors">
-                    <div className="flex items-start gap-4">
-                      <div className="flex-1">
-                        <h3 className="text-xl font-semibold text-white mb-1">{edu.degree}</h3>
-                        <p className="text-blue-400 font-medium mb-2">{edu.institution}</p>
-                        <p className="text-gray-400 text-sm mb-1">{edu.year}</p>
-                        <p className="text-gray-400 text-sm mb-3">{edu.location}</p>
-                        <p className="text-gray-300 leading-relaxed mb-4">{edu.description}</p>
-                        {edu.website && (
-                          <a 
-                            href={edu.website} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-blue-400 hover:text-blue-300 text-sm inline-block"
-                          >
-                            Visit Institution →
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+    <SectionContainer 
+      id="education" 
+      title="Education"
+      containerClassName="max-w-4xl mx-auto px-4"
+    >
+      <TracingBeam className="px-6">
+        <div className="max-w-2xl mx-auto antialiased pt-4 relative">
+          <div className="mb-10">
+            {education.map((edu) => (
+              <EducationCard key={edu.id} edu={edu} />
+            ))}
           </div>
-        </TracingBeam>
-      </div>
-    </section>
+        </div>
+      </TracingBeam>
+    </SectionContainer>
   );
 };
 

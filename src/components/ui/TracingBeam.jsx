@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useTransform, useScroll, useVelocity, useSpring } from "framer-motion";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
 
 export const TracingBeam = ({ children, className }) => {
   const ref = useRef(null);
@@ -10,6 +10,7 @@ export const TracingBeam = ({ children, className }) => {
 
   const contentRef = useRef(null);
   const [svgHeight, setSvgHeight] = useState(0);
+  const gradientId = useRef(`gradient-${Math.random().toString(36).substr(2, 9)}`).current;
 
   useEffect(() => {
     if (contentRef.current) {
@@ -84,7 +85,7 @@ export const TracingBeam = ({ children, className }) => {
           <motion.path
             d={`m 1 0 V -36 l 18 24 V ${svgHeight * 0.8} l -18 24`}
             fill="none"
-            stroke="url(#gradient)"
+            stroke={`url(#${gradientId})`}
             strokeWidth="1.25"
             className="motion-reduce:hidden"
             transition={{
@@ -93,7 +94,7 @@ export const TracingBeam = ({ children, className }) => {
           ></motion.path>
           <defs>
             <motion.linearGradient
-              id="gradient"
+              id={gradientId}
               gradientUnits="userSpaceOnUse"
               x1="0"
               x2="0"
