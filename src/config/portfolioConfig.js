@@ -133,7 +133,16 @@ const portfolioConfig = {
   skills: {
     frontend: {
       title: "Frontend Development",
-      technologies: [
+technologies: [
+        // Programming Related
+        {
+          name: "JavaScript & TypeScript",
+          description: "Modern ES6+ JavaScript and TypeScript for type-safe, scalable applications.",
+          icon: "/images/tech_logos/js.png",
+          level: "Expert"
+        },
+        
+        // React Related
         {
           name: "React.js",
           description: "Building dynamic user interfaces with modern React patterns, hooks, and state management solutions.",
@@ -147,11 +156,25 @@ const portfolioConfig = {
           level: "Advanced"
         },
         {
-          name: "JavaScript & TypeScript",
-          description: "Modern ES6+ JavaScript and TypeScript for type-safe, scalable applications.",
-          icon: "/images/tech_logos/js.png",
-          level: "Expert"
+          name: "Redux",
+          description: "Predictable state container for JavaScript applications with time-travel debugging.",
+          icon: "/images/tech_logos/redux.png",
+          level: "Advanced"
         },
+        {
+          name: "RTK Query",
+          description: "Data fetching and caching solution built on Redux Toolkit for efficient API management.",
+          icon: "/images/tech_logos/redux.png",
+          level: "Advanced"
+        },
+        {
+          name: "Zustand",
+          description: "Lightweight state management solution for React applications with minimal boilerplate.",
+          icon: "/images/tech_logos/zustand.png",
+          level: "Intermediate"
+        },
+        
+        // UX Related
         {
           name: "Tailwind CSS",
           description: "Utility-first CSS framework for rapid UI development and consistent design systems.",
@@ -168,6 +191,18 @@ const portfolioConfig = {
           name: "Bootstrap",
           description: "Popular CSS framework for responsive and mobile-first web development.",
           icon: "/images/tech_logos/bootstrap.png",
+          level: "Intermediate"
+        },
+        {
+          name: "shadcn/ui",
+          description: "Modern React component library built with Radix UI and Tailwind CSS for accessible design systems.",
+          icon: "/images/tech_logos/shadcn.png",
+          level: "Intermediate"
+        },
+        {
+          name: "Aceternity UI",
+          description: "Beautiful animated React components and templates for modern web applications.",
+          icon: "/images/tech_logos/aceternity.png",
           level: "Intermediate"
         }
       ]
@@ -209,6 +244,47 @@ const portfolioConfig = {
           name: "PHP",
           description: "Server-side scripting language for web development and content management systems.",
           icon: "/images/tech_logos/php.png",
+          level: "Intermediate"
+        }
+      ]
+    },
+    integration: {
+      title: "API & Integration",
+      technologies: [
+        {
+          name: "REST APIs",
+          description: "RESTful web services for scalable and stateless client-server communication.",
+          icon: "/images/tech_logos/rest_api.png",
+          level: "Expert"
+        },
+        {
+          name: "GraphQL",
+          description: "Query language for APIs providing efficient data fetching and real-time subscriptions.",
+          icon: "/images/tech_logos/graphql.png",
+          level: "Intermediate"
+        },
+        {
+          name: "WebSockets",
+          description: "Real-time bidirectional communication between client and server applications.",
+          icon: "/images/tech_logos/websocket.png",
+          level: "Intermediate"
+        },
+        {
+          name: "MQTT",
+          description: "Lightweight messaging protocol for IoT and real-time data streaming applications.",
+          icon: "/images/tech_logos/mqtt.png",
+          level: "Beginner"
+        },
+        {
+          name: "JSON",
+          description: "JavaScript Object Notation for lightweight data interchange and API responses.",
+          icon: "/images/tech_logos/json.png",
+          level: "Expert"
+        },
+        {
+          name: "XML",
+          description: "Extensible Markup Language for structured data exchange and configuration.",
+          icon: "/images/tech_logos/xml.png",
           level: "Intermediate"
         }
       ]
