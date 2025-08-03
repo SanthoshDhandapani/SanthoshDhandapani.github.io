@@ -37,7 +37,18 @@ const Navigation = ({ activeSection }) => {
 
         {/* Mobile Navigation */}
         <div className="md:hidden flex justify-between items-center">
-          <span className="text-xl font-bold text-blue-600 dark:text-blue-400">Portfolio</span>
+          <button 
+            onClick={() => {
+              const homeSection = document.getElementById('home');
+              if (homeSection) {
+                homeSection.scrollIntoView({ behavior: 'smooth' });
+                setMobileMenuOpen(false);
+              }
+            }}
+            className="text-xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors"
+          >
+            Portfolio
+          </button>
           <div className="flex items-center space-x-3">
             <ThemeToggle />
             <button

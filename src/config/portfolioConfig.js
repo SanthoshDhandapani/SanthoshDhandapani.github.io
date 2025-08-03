@@ -30,7 +30,7 @@ const portfolioConfig = {
 
   // Professional Summary
   summary: {
-    content: `A Lead Software Engineer with ${yearsOfExperience} years specializing in Frontend Development across dynamic web, desktop, and mobile applications. Proven expertise in all stages of the development lifecycle with strong background in architecture, implementation, team leadership, and project management. Committed to quality-driven development through methodical planning, algorithmic design, comprehensive testing, continuous code reviews, and collaborative peer discussions.`
+    content: `A Lead Software Engineer with ${yearsOfExperience} years of experience specializing in Frontend Development across dynamic web, desktop, and mobile applications. Proven expertise in all stages of the development lifecycle with a strong background in architecture, implementation, team leadership, and project management. Committed to quality-driven development through methodical planning, design, comprehensive testing, continuous code reviews, and collaborative peer discussions.`
   },
 
   // Work Experience Timeline
