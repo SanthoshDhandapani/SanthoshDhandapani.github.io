@@ -54,7 +54,7 @@ const ProfileHeader = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 0.8 }}
-          className="mt-8 flex justify-center gap-8 text-sm"
+          className="mt-8 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-8 justify-center items-center text-sm"
         >          
           <div className="text-gray-500 dark:text-gray-400 text-center transition-colors duration-300">
             <span className="text-blue-600 dark:text-blue-400 transition-colors duration-300">Experience:</span> Since Aug 2012
