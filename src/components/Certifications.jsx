@@ -16,16 +16,16 @@ const Certifications = () => {
           <Card key={cert.id} hoverColor="green-500" delay={index * 0.1}>
             <div className="flex items-start justify-between mb-4">
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-white group-hover:text-green-400 transition-colors mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-green-500 dark:group-hover:text-green-400 transition-colors mb-2">
                   {cert.title}
                 </h3>
-                <p className="text-blue-400 font-medium mb-1">{cert.issuer}</p>
-                <p className="text-gray-400 text-sm mb-3">{cert.date}</p>
+                <p className="text-blue-600 dark:text-blue-400 font-medium mb-1">{cert.issuer}</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">{cert.date}</p>
               </div>
               <Icon size="md">📜</Icon>
             </div>
             
-            <p className="text-gray-300 text-sm leading-relaxed mb-4">{cert.description}</p>
+            <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">{cert.description}</p>
             
             {cert.credentialUrl && (
               <ExternalLink href={cert.credentialUrl} color="green">

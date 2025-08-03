@@ -44,26 +44,15 @@ const Skills = () => {
           {/* Skills organized by categories */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {Object.entries(portfolioConfig.skills).map(([categoryKey, category], categoryIndex) => {
-              // Define category-specific styling
+              // Define category-specific styles
               const categoryStyles = {
-                frontend: {
-                  gradient: 'from-blue-600 to-purple-600',
-                  icon: '🎨',
-                  borderColor: 'border-blue-500',
-                  hoverBorder: 'hover:border-blue-400'
-                },
-                backend: {
-                  gradient: 'from-blue-600 to-purple-600', 
-                  icon: '⚙️',
-                  borderColor: 'border-blue-500',
-                  hoverBorder: 'hover:border-blue-400'
-                },
-                integration: {
-                  gradient: 'from-blue-600 to-purple-600',
-                  icon: '🔗',
-                  borderColor: 'border-blue-500', 
-                  hoverBorder: 'hover:border-blue-400'
-                }
+                frontend: { icon: '🎨' },
+                backend: { icon: '⚙️' },
+                mobile: { icon: '📱' },
+                tools: { icon: '🛠️' },
+                database: { icon: '🗄️' },
+                design: { icon: '🎯' },
+                other: { icon: '💡' }
               };
               
               const style = categoryStyles[categoryKey] || categoryStyles.frontend;
@@ -74,7 +63,7 @@ const Skills = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: categoryIndex * 0.15, duration: 0.6 }}
-                  className={`relative group bg-gradient-to-br from-gray-900 to-gray-800 border-2 ${style.borderColor} rounded-xl p-6 ${style.hoverBorder} hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-1 min-h-[280px] flex flex-col`}
+                  className="relative group bg-gray-900 rounded-lg border border-gray-800 hover:border-blue-500 transition-colors p-6 min-h-[280px] flex flex-col"
                 >
                   {/* Category header */}
                   <div className="relative z-10 mb-6">

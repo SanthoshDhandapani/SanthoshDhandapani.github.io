@@ -16,14 +16,14 @@ const Awards = () => {
             <div className="flex items-center mb-4">
               <Icon size="lg" className="mr-3">{award.icon}</Icon>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-white group-hover:text-yellow-400 transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-yellow-500 dark:group-hover:text-yellow-400 transition-colors">
                   {award.title}
                 </h3>
-                <p className="text-blue-400 text-sm font-medium">{award.company}</p>
+                <p className="text-blue-600 dark:text-blue-400 text-sm font-medium">{award.company}</p>
               </div>
             </div>
-            <p className="text-gray-400 text-sm mb-3">{award.year}</p>
-            <p className="text-gray-300 text-sm leading-relaxed">{award.description}</p>
+            <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">{award.year}</p>
+            <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{award.description}</p>
           </Card>
         ))}
       </Grid>

@@ -8,7 +8,17 @@ const Card = ({
   delay = 0,
   ...props 
 }) => {
-  const baseClasses = `p-6 bg-gray-900 rounded-lg border border-gray-800 hover:border-${hoverColor} transition-all duration-300 hover:shadow-lg hover:shadow-${hoverColor}/10 cursor-default`;
+  // Map hover colors to actual Tailwind classes
+  const hoverColorMap = {
+    'blue-500': 'hover:border-blue-500 hover:shadow-blue-500/10',
+    'green-500': 'hover:border-green-500 hover:shadow-green-500/10',
+    'yellow-500': 'hover:border-yellow-500 hover:shadow-yellow-500/10',
+    'purple-500': 'hover:border-purple-500 hover:shadow-purple-500/10',
+    'red-500': 'hover:border-red-500 hover:shadow-red-500/10'
+  };
+  
+  const hoverClasses = hoverColorMap[hoverColor] || hoverColorMap['blue-500'];
+  const baseClasses = `p-6 bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 ${hoverClasses} transition-all duration-300 hover:shadow-lg cursor-default`;
   
   return (
     <motion.div

@@ -15,10 +15,10 @@ const Hobbies = () => {
           <Card key={interest.name} hoverColor="blue-500" delay={index * 0.1}>
             <div className="text-center">
               <Icon size="xl" className="mb-4">{interest.icon}</Icon>
-              <h3 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors mb-2">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors mb-2">
                 {interest.name}
               </h3>
-              <p className="text-gray-400 text-sm">{interest.description}</p>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">{interest.description}</p>
             </div>
           </Card>
         ))}
