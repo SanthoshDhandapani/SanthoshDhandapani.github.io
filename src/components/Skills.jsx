@@ -10,6 +10,8 @@ const Skills = () => {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-16 transition-colors duration-300"
         >
           How I Work
@@ -34,6 +36,8 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
           className="text-center"
         >
           <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">Technologies & Skills</h3>
@@ -77,16 +81,13 @@ const Skills = () => {
                   {/* Technology tags */}
                   <div className="relative z-10 flex flex-wrap gap-2 justify-center">
                     {category.technologies.map((tech, techIndex) => (
-                      <motion.span
+                      <span
                         key={tech.name}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: (categoryIndex * 0.15) + (techIndex * 0.05), duration: 0.4 }}
                         className="px-3 py-1 bg-blue-50 dark:bg-blue-900 dark:bg-opacity-30 hover:bg-blue-100 dark:hover:bg-blue-800 dark:hover:bg-opacity-50 text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-100 text-sm rounded-full transition-all duration-300 cursor-default border border-blue-200 dark:border-blue-500 hover:border-blue-300 dark:hover:border-blue-400 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30"
                         title={`${tech.description} (${tech.level})`}
                       >
                         {tech.name}
-                      </motion.span>
+                      </span>
                     ))}
                   </div>
                 </Card>

@@ -17,23 +17,51 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      
-      // Get all sections
       const sections = ['home', 'skills', 'experience', 'education', 'awards', 'certifications', 'design-works', 'personal-works', 'hobbies'];
-      const scrollPosition = window.scrollY + 100; // Offset for better detection
+      const scrollPosition = window.scrollY;
       
-      // Find which section is currently in view
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = document.getElementById(sections[i]);
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i]);
-          break;
+      // If at the very top, set to home
+      if (scrollPosition < 100) {
+        if (activeSection !== 'home') {
+          setActiveSection('home');
+        }
+        return;
+      }
+      
+      // Check if we're at the bottom of the page
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const isAtBottom = scrollPosition + windowHeight >= documentHeight - 50;
+      
+      if (isAtBottom) {
+        const lastSection = sections[sections.length - 1];
+        if (activeSection !== lastSection) {
+          setActiveSection(lastSection);
+        }
+        return;
+      }
+      
+      // Find the current section based on scroll position
+      let currentSection = 'home';
+      
+      for (let i = 1; i < sections.length; i++) { // Start from 1 to skip 'home'
+        const element = document.getElementById(sections[i]);
+        if (element && scrollPosition + 200 >= element.offsetTop) {
+          currentSection = sections[i];
         }
       }
+      
+      if (currentSection !== activeSection) {
+        setActiveSection(currentSection);
+      }
     };
-    window.addEventListener('scroll', handleScroll);
+
+    // Initial call to set the correct section on load
+    handleScroll();
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [activeSection]);
 
   return (
     <ThemeProvider>
