@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import portfolioConfig from '../config/portfolioConfig';
+import ThemeToggle from './ui/ThemeToggle';
 
 const Navigation = ({ activeSection }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black bg-opacity-80 backdrop-blur-sm border-b border-gray-800">
+    <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 py-4">
         {/* Desktop Navigation */}
-        <div className="hidden md:flex justify-center items-center">
+        <div className="hidden md:flex justify-between items-center">
+          <div></div> {/* Spacer */}
+          <div className="flex justify-center flex-1">
           <div className="flex space-x-8">
             {portfolioConfig.navigation.map((item) => {
               const sectionId = item.href.replace('#', '');
@@ -19,8 +22,8 @@ const Navigation = ({ activeSection }) => {
                   href={item.href} 
                   className={`transition-colors font-medium ${
                     isActive 
-                      ? 'text-blue-400 border-b-2 border-blue-400 pb-1' 
-                      : 'text-gray-300 hover:text-blue-400'
+                      ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 pb-1' 
+                      : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
                   }`}
                 >
                   {item.name}
@@ -28,15 +31,19 @@ const Navigation = ({ activeSection }) => {
               );
             })}
           </div>
+          </div>
+          <ThemeToggle />
         </div>
 
         {/* Mobile Navigation */}
         <div className="md:hidden flex justify-between items-center">
-          <span className="text-xl font-bold text-blue-400">Portfolio</span>
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-gray-300 hover:text-blue-400 transition-colors"
-          >
+          <span className="text-xl font-bold text-blue-600 dark:text-blue-400">Portfolio</span>
+          <div className="flex items-center space-x-3">
+            <ThemeToggle />
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -44,12 +51,13 @@ const Navigation = ({ activeSection }) => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
-          </button>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu Dropdown */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-800">
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-800">
             <div className="flex flex-col space-y-2 pt-4">
               {portfolioConfig.navigation.map((item) => {
                 const sectionId = item.href.replace('#', '');
@@ -59,10 +67,10 @@ const Navigation = ({ activeSection }) => {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`py-2 px-4 rounded transition-colors font-medium ${
+                    className={`block py-2 px-4 rounded transition-colors ${
                       isActive 
-                        ? 'text-blue-400 bg-blue-900 bg-opacity-20 border-l-4 border-blue-400' 
-                        : 'text-gray-300 hover:text-blue-400 hover:bg-gray-800'
+                        ? 'text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900 bg-opacity-20 dark:bg-opacity-20 border-l-4 border-blue-500 dark:border-blue-400' 
+                        : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800'
                     }`}
                   >
                     {item.name}

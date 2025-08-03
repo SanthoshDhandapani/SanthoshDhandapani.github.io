@@ -9,10 +9,10 @@ const ExternalLink = ({
   ...props 
 }) => {
   const colorClasses = {
-    blue: "text-blue-400 hover:text-blue-300",
-    green: "text-green-400 hover:text-green-300",
-    yellow: "text-yellow-400 hover:text-yellow-300",
-    purple: "text-purple-400 hover:text-purple-300"
+    blue: "text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300",
+    green: "text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300",
+    yellow: "text-yellow-600 hover:text-yellow-700 dark:text-yellow-400 dark:hover:text-yellow-300",
+    purple: "text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
   };
 
   const baseClasses = `inline-flex items-center text-sm font-medium transition-colors group-hover:underline ${colorClasses[color]}`;

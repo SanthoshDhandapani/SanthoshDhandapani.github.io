@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ThemeProvider } from './contexts/ThemeContext';
 import ProfileHeader from './components/ProfileHeader';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
@@ -35,8 +36,9 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      <div className="bg-black text-white">
+    <ThemeProvider>
+      <div className="min-h-screen">
+        <div className="bg-gradient-to-b from-gray-50 to-gray-100 dark:bg-black text-gray-900 dark:text-white transition-colors duration-300">
         <Navigation activeSection={activeSection} />
 
         {/* Main Content */}
@@ -59,14 +61,15 @@ function App() {
           <Hobbies />
         </main>
 
-        {/* Footer */}
-        <footer className="py-8 bg-black border-t border-gray-800">
-          <div className="max-w-6xl mx-auto px-4 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} San D - Portfolio. Built with React & Aceternity UI.</p>
-          </div>
-        </footer>
+          {/* Footer */}
+          <footer className="py-8 bg-gray-100 dark:bg-black border-t border-gray-200 dark:border-gray-800">
+            <div className="max-w-6xl mx-auto px-4 text-center text-gray-600 dark:text-gray-400">
+              <p>&copy; {new Date().getFullYear()} San D - Portfolio. Built with React & Aceternity UI.</p>
+            </div>
+          </footer>
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }
 

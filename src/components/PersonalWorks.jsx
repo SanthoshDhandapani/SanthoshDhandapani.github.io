@@ -8,13 +8,13 @@ const PersonalWorks = () => {
 
   return (
     <SectionContainer id="personal-works" title="Personal Projects">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
         {works.map((work, index) => (
           <CardContainer key={work.id}>
-            <CardBody className="bg-gray-900 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+            <CardBody className="bg-white dark:bg-gray-900 relative group/card hover:shadow-xl dark:hover:shadow-2xl hover:shadow-blue-500/10 dark:hover:shadow-emerald-500/[0.1] border-gray-200 dark:border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-all duration-300">
               <CardItem
                 translateZ="50"
-                className="text-xl font-bold text-white"
+                className="text-xl font-bold text-gray-900 dark:text-white transition-colors duration-300"
               >
                 {work.title}
               </CardItem>
@@ -24,16 +24,16 @@ const PersonalWorks = () => {
                 translateZ="40"
                 className="flex items-center gap-2 mt-2 mb-3"
               >
-                <span className="text-xs px-2 py-1 bg-blue-900 bg-opacity-50 text-blue-300 rounded">
+                <span className="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900 dark:bg-opacity-50 text-blue-700 dark:text-blue-300 rounded transition-colors duration-300">
                   {work.category}
                 </span>
-                <span className="text-xs text-gray-500">{work.year}</span>
+                <span className="text-xs text-gray-600 dark:text-gray-400 transition-colors duration-300">{work.year}</span>
               </CardItem>
               
               <CardItem
                 as="p"
                 translateZ="60"
-                className="text-gray-400 text-sm max-w-sm mt-2"
+                className="text-gray-700 dark:text-gray-400 text-sm max-w-sm mt-2 transition-colors duration-300"
               >
                 {work.description}
               </CardItem>
@@ -54,7 +54,7 @@ const PersonalWorks = () => {
                   {work.technologies.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded"
+                      className="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded transition-colors duration-300"
                     >
                       {tech}
                     </span>
@@ -62,29 +62,25 @@ const PersonalWorks = () => {
                 </div>
               </CardItem>
               
-              <CardItem translateZ="20" className="flex justify-between items-center mt-6 mb-2 w-full pr-2">
-                <div className="flex">
-                  {work.githubUrl && (
-                    <a
-                      href={work.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold hover:bg-gray-200 transition-colors"
-                    >
-                      GitHub
-                    </a>
-                  )}
-                </div>
-                <div className="flex pr-2">
+              <CardItem translateZ="80" className="flex flex-col items-center gap-3 mt-6 mb-2 w-full relative z-10">
+                {work.githubUrl && (
                   <a
-                    href={work.liveUrl}
+                    href={work.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 rounded-xl text-xs font-normal text-white hover:text-blue-400 transition-colors"
+                    className="px-4 py-2 rounded-xl bg-gray-900 dark:bg-white text-white dark:text-black text-xs font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300"
                   >
-                    View Live →
+                    GitHub
                   </a>
-                </div>
+                )}
+                <a
+                  href={work.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-xl text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300 border border-blue-600 dark:border-blue-400 hover:border-blue-500 dark:hover:border-blue-300 hover:bg-blue-50 dark:hover:bg-blue-400/10"
+                >
+                  View Live →
+                </a>
               </CardItem>
             </CardBody>
           </CardContainer>

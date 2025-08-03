@@ -5,8 +5,8 @@ const SectionContainer = ({
   id, 
   title, 
   children, 
-  className = "py-20 bg-black",
-  titleClassName = "text-4xl md:text-6xl font-bold text-center text-white mb-16",
+  className = "py-20 bg-gray-50 dark:bg-black transition-colors duration-300",
+  titleClassName = "text-4xl md:text-6xl font-bold text-center text-gray-900 dark:text-white mb-16 transition-colors duration-300",
   containerClassName = "max-w-6xl mx-auto px-4"
 }) => {
   return (

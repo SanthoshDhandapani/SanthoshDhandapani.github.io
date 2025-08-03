@@ -3,8 +3,12 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class', // Enable class-based dark mode
   theme: {
     extend: {
+      colors: {
+        'custom-blue': 'oklch(62.3% 0.214 259.815)',
+      },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
         "fade-in": "fadeIn 0.5s ease-in-out",

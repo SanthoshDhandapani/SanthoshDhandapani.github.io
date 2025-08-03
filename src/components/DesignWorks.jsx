@@ -16,21 +16,18 @@ const DesignWorks = () => {
           viewport={{ once: true }}
           className="text-center max-w-4xl"
         >
-          <h3 className="text-2xl font-semibold text-white mb-6">{work.title}</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 transition-colors duration-300">{work.title}</h3>
           
           {/* Full Image Display */}
           <div className="mb-8 py-8">
             <img 
               src={work.thumbnail} 
               alt={work.title}
-              className="w-full h-auto max-w-full mx-auto rounded-lg shadow-2xl hover:shadow-white/60 transition-all duration-500 transform hover:scale-105 shadow-white/40"
-              style={{
-                filter: 'drop-shadow(0 0 20px rgba(255, 255, 255, 0.5))'
-              }}
+              className="w-full h-auto max-w-full mx-auto rounded-lg transform hover:scale-105 design-work-image"
             />
           </div>
           
-          <p className="text-lg text-gray-300 mb-6">
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 transition-colors duration-300">
             {work.description}
           </p>
           
@@ -38,14 +35,14 @@ const DesignWorks = () => {
             {work.technologies.map((tech, index) => (
               <span 
                 key={index}
-                className="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded"
+                className="px-3 py-1 bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded transition-colors duration-300"
               >
                 {tech}
               </span>
             ))}
           </div>
           
-          <div className="text-gray-400 text-lg">
+          <div className="text-gray-500 dark:text-gray-400 text-lg transition-colors duration-300">
             {work.year}
           </div>
         </motion.div>

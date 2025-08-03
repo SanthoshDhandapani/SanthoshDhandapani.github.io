@@ -205,7 +205,7 @@ technologies: [
           level: "Intermediate"
         },
         {
-          name: "shadcn/ui",
+          name: "Shadcn/ui",
           description: "Modern React component library built with Radix UI and Tailwind CSS for accessible design systems.",
           icon: "/images/tech_logos/shadcn.png",
           level: "Intermediate"
@@ -417,7 +417,7 @@ technologies: [
       title: "Erive Enterprises",
       description: "Event management platform providing top-notch services with LED projectors, audio equipment, and high-quality screens. A comprehensive solution for orchestrating amazing events with multi-sensory experiences.",
       image: "/images/projects/personal_works/personal_project_erive_audio.png",
-      technologies: ["React.js", "Node.js", "Event Management", "Responsive Design"],
+      technologies: ["React.js", "JavaScript", "Event Management", "Responsive Design"],
       githubUrl: "",
       liveUrl: "https://erive.web.app/",
       category: "Business Website",
